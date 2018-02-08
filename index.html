@@ -7,15 +7,20 @@
     <title>Piacenza Informatica S.n.c</title>
 </head>
 <body style="text-align:center;">
-    <img src="pc1.gif">
+    <img id="immagine" src="pc1.gif">
     <h1>Piacenza Informatica S.n.c</h1>
     <div id="content"></div>
+    <script src="jquery.js"></script>
     <script>
-        window.onload = () => {
-            console.log("Benvenuti nel sito di Piacenza Informatica");
-            //document.querySelector("#content").innerHTML = "Benvenuti nel sito di Piacenza Informatica"
-            //alert(event.timeStamp);
-        }
+        $(()=>{
+            $("#content").html("Benvenuti nel sito di Piacenza Informatica");
+            $("#immagine").click(()=>{
+                $("#immagine").animate({
+                    width: "+=10%",
+                    height: "+=10%",
+                }, 1000)
+            })
+        })
     </script>
 </body>
 </html>
