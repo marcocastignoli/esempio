@@ -1,0 +1,11 @@
+{
+  "name": "piacenzainformatica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Marco Castignoli <marco@castignoli.it> (https://castignoli.it/)",
+  "license": "MIT",
+  "dependencies": {
+    "uniq": "^1.0.1"
+  }
+}
